@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="container box indexHeading">
+  <h1>👋 My name is Satish Upadhyaya.</h1>
+  <br>
+
+  <img src="/assets/SatishUpadhyaya.jpg" alt="SatishUpadhyaya.jpeg">
+
+  <p>
+    I am a student and a software engineer.
+    <ul>
+      <li style="margin-bottom: 10px;">⚙️ I’m currently working on a startup with friends, as well as in the <a href="https://www.colorado.edu/lab/sbs/satish-upadhyaya" target="_blank">SBS</a> group as an undergraduate researcher.</li>
+      <li style="margin-bottom: 10px;">🦄 I previously worked at Microsoft and Workday as a SWE intern.</li>
+      <li style="margin-bottom: 10px;">📓 I’m currently learning machine learning, applying it via <a href="https://pytorch.org/" target="_blank">PyTorch</a>.</li>
+      <li style="margin-bottom: 10px;">🔧 Languages: Python, C, C++, C#, Typescript</li>
+    </ul>
+
+  <a href="/about">Read more about me ...</a></p>
+</div>
