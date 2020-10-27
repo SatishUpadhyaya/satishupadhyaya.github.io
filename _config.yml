@@ -9,7 +9,8 @@ permalink:        pretty
 title:            Satish Upadhyaya
 tagline:          'Personal Website'
 description:      '/home/SatishUpadhyaya'
-#url:              http://hyde.getpoole.com
+url:              https://satishupadhyaya.github.io/
+baseurl:          /
 
 author:
   name:           'Satish Upadhyaya'
@@ -32,8 +33,10 @@ version:          2.1.0
 
 plugins:
   - jekyll-gist
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
-# repository:           https://github.com/satishupadhyaya/satishupadhyaya.github.io
+repository:           https://github.com/satishupadhyaya/satishupadhyaya.github.io
 
 # Collections
 collections:

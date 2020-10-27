@@ -11,22 +11,8 @@ Additionally, I'm currently working as a Research Assistant in the <a href="http
 
 In other areas, this past summer, I interned with Microsoft on the Physical Networking team (remotely). Furthermore, I previously interned at Workday on the Worksheets team. In the past, I have also worked as a course assistant for an Introduction to Computer Science course at CU Boulder.
 
-My interests include machine learning, emerging technologies, and startups. Besides academics, I am a novice hiker and skier. My most recent hobby is playing drums.
+My interests lie at the intersection of software development and entrepreneurship. I love developing products with an immediate, tangible impact in society. I also have love for emerging technologies. My experience spans a plethora of domains within the field. Besides this, I am an avid hiker and skier. My most recent hobby is playing drums.
 
 <hr>
 
-You can find my latest resume <a href="/assets/SatishUpadhyayaResumePublic.pdf" target="_blank">here</a>. <i> Last updated: September 10, 2020</i>
-
-<hr>
-
-<div class="container box overflow-auto">
-  <h2>Timeline</h2>
-  <ul>
-    {% assign events = site.data.timeline | sort: 'date' | reverse %}
-    {% for event in events limit: 25%}
-    <li>
-      <b>{{ event.date | date_to_string }} - </b> {{ event.description }}
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+You can find my latest resume <a href="https://github.com/SatishUpadhyaya/SUResume/blob/master/SatishUpadhyayaResume.pdf" target="_blank">here</a>. <i> Last updated: Fall 2020</i>
