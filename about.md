@@ -5,7 +5,7 @@ title: About Me
 
 >_"Entrepreneurs can't forecast accurately, because they are trying something fundamentally new. So they will often be laughably behind plan - and on the brink of success." - Eric Ries_
 
-I'm Satish Upadhyaya and I graduated from the University of Colorado Boulder with a B.S. in Computer Science in Summer 2021. I am currently working at Microsoft as a Software Engineer in the Azure Netoworking org. I'm also a Co-Founder and CTO at a startup currently operating in stealth mode.
+I'm Satish Upadhyaya and I graduated from the University of Colorado Boulder with a B.S. in Computer Science in Summer 2021. I am currently working at Microsoft as a Software Engineer in the Azure Networking org. I'm also a Co-Founder and CTO at a startup currently operating in stealth mode.
 
 During my time at CU Boulder, I worked as a Research Assistant in the <a href="https://www.colorado.edu/lab/sbs/satish-upadhyaya" target="_blank">SBS group</a>, where I helped develop a <a href="https://www.colorado.edu/lab/sbs/2021/03/11/open-source-releases-our-building-energy-models-commercial-buildings-based-cbecs-data" target="_blank">scalable software system</a> on CU’s supercomputer cluster for running large scale energy simulations. A publication has come out of this lab, regarding the usage of meta-models over running computationally intensive simulations.
 
