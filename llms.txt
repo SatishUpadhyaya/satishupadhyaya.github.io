@@ -1,0 +1,67 @@
+# Satish Upadhyaya
+
+> Software Engineer II at Microsoft, working in the Azure Networking org.
+> University of Colorado Boulder, B.S. Computer Science, 2021. Currently
+> working with local LLMs and agentic development workflows.
+
+## Usage
+
+This content may be read, summarised, and cited with a link back to
+https://satishupadhyaya.github.io/. It is not made available for inclusion in
+model training corpora; see /robots.txt, which disallows training crawlers
+while allowing search and answer engines.
+
+## About
+
+Satish Upadhyaya is a software engineer based in the United States. He
+graduated from the University of Colorado Boulder with a B.S. in Computer
+Science in Summer 2021 and works at Microsoft as a Software Engineer II in
+the Azure Networking org.
+
+At CU Boulder he was a Research Assistant in the SBS group, where he helped
+build a scalable software system on the university's supercomputer cluster
+for running large-scale building-energy simulations. A publication came out
+of that lab on using meta-models in place of computationally intensive
+simulations.
+
+He interned at Microsoft on the Azure Networking team (remote, Summer 2020)
+and at Workday on the Worksheets team (in person, 2019), and worked as a
+course assistant for an introductory computer science course at CU Boulder.
+
+Current interests: running local LLMs on his own hardware, and folding
+agentic workflows into day-to-day software development. Outside of work he
+is an avid hiker and skier.
+
+Languages and tools: C#, Python, Home Assistant, computer vision libraries.
+
+## Current work (private repositories, no public links)
+
+- Agentic AI workflows for everyday software development, and running local
+  large language models on self-hosted hardware.
+- A home automation system built on Home Assistant covering lights, locks,
+  and cameras, including a garage door that opens on license-plate
+  recognition.
+
+## Public projects
+
+- [OpenPose Drone Control Via Body Movement](https://github.com/SatishUpadhyaya/Robotics-Final-Project):
+  Drone control via MAVROS using keyboard input, ArUco tracking, and OpenPose.
+- [Data Visualization Web App with Dash](https://github.com/SatishUpadhyaya/GWDataVisualizer):
+  A tool for pulling analytics and statistics out of a dataset.
+- [Project Euler](https://github.com/SatishUpadhyaya/ProjectEuler):
+  Solutions to the first 49 Project Euler problems in Python 3.
+- [NFL Home Field Predictor](https://github.com/SatishUpadhyaya/NFL_HomeFieldPredictor):
+  An SVM-SVC model relating QB passer rating and final score to home/away
+  advantage, built with pandas, NumPy, and scikit-learn.
+
+## Links
+
+- [Website](https://satishupadhyaya.github.io/)
+- [GitHub](https://github.com/satishupadhyaya)
+- [LinkedIn](https://www.linkedin.com/in/satishupadhyaya/)
+- [Resume](https://github.com/SatishUpadhyaya/SUResume/blob/master/SatishUpadhyayaResume.pdf)
+
+## Contact
+
+Reach out via LinkedIn or GitHub. An email address is published on the
+website but is deliberately not included in machine-readable form.

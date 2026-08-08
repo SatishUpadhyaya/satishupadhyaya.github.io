@@ -1,0 +1,111 @@
+# Policy: findable, not trainable.
+#
+# Search engines and AI answer engines may crawl and cite this site.
+# Crawlers that collect content into model training corpora may not.
+#
+# robots.txt is voluntary — well-behaved crawlers honour it, it is not
+# enforcement. Opting an agent out requires an explicit Disallow: omitting
+# an agent leaves it ALLOWED via the wildcard below.
+
+User-agent: *
+Allow: /
+
+# ---------------------------------------------------------------------------
+# ALLOWED — search and answer engines. These fetch pages to answer a user's
+# question and link back, which is the point of having a site.
+# ---------------------------------------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Apple's search crawler (Siri, Spotlight). Distinct from Applebot-Extended,
+# which is the training token and is blocked below.
+User-agent: Applebot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ---------------------------------------------------------------------------
+# DISALLOWED — model training crawlers.
+# ---------------------------------------------------------------------------
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: cohere-training-data-crawler
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: Webzio-Extended
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: PanguBot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+Sitemap: https://satishupadhyaya.github.io/sitemap.xml

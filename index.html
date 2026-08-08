@@ -1,39 +1,353 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Satish Upadhyaya &middot; Software Engineer</title>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<meta name="description" content="Satish Upadhyaya — Software Engineer at Microsoft in the Azure Networking org, and a University of Colorado Boulder Computer Science graduate.">
+<meta name="author" content="Satish Upadhyaya">
+<meta name="theme-color" content="#0a0e13">
+<meta name="google-site-verification" content="j_aMOmJ8qKZP2pCNIz7RGmgZ6sOoi11gExdxEmRsx_I">
+<link rel="canonical" href="https://satishupadhyaya.github.io/">
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+<!-- Open Graph + card tags: drive link previews in Slack, Discord, iMessage, etc. -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satishupadhyaya.github.io/">
+<meta property="og:site_name" content="Satish Upadhyaya">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Satish Upadhyaya · Software Engineer">
+<meta property="og:description" content="Software Engineer at Microsoft in the Azure Networking org. CU Boulder Computer Science, 2021.">
+<meta property="og:image" content="https://satishupadhyaya.github.io/assets/SatishUpadhyaya.jpg">
+<meta property="og:image:width" content="460">
+<meta property="og:image:height" content="460">
+<meta property="og:image:alt" content="Portrait of Satish Upadhyaya">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Satish Upadhyaya · Software Engineer">
+<meta name="twitter:description" content="Software Engineer at Microsoft in the Azure Networking org. CU Boulder Computer Science, 2021.">
+<meta name="twitter:image" content="https://satishupadhyaya.github.io/assets/SatishUpadhyaya.jpg">
 
-    {{ post.content }}
+<!-- Icons -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+
+<link rel="stylesheet" href="/assets/css/site.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Satish Upadhyaya",
+  "url": "https://satishupadhyaya.github.io/",
+  "image": "https://satishupadhyaya.github.io/assets/SatishUpadhyaya.jpg",
+  "jobTitle": "Software Engineer II",
+  "description": "Software Engineer II at Microsoft in the Azure Networking org. CU Boulder Computer Science, 2021. Works with local LLMs and agentic development workflows.",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Colorado Boulder",
+    "sameAs": "https://www.colorado.edu/"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Microsoft",
+    "sameAs": "https://www.microsoft.com/"
+  },
+  "knowsAbout": [
+    "Software Engineering",
+    "Cloud Networking",
+    "Large Language Models",
+    "Agentic AI Workflows",
+    "Home Automation",
+    "Computer Vision",
+    "C#",
+    "Python"
+  ],
+  "sameAs": [
+    "https://github.com/satishupadhyaya",
+    "https://www.linkedin.com/in/satishupadhyaya/"
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-tilde">~</span><span class="brand-slash">/</span>satish<span class="cursor" aria-hidden="true"></span>
+    </a>
+
+    <nav class="nav-links" id="nav-links" aria-label="Section navigation">
+      <a href="#about"><span class="nav-num">01.</span> about</a>
+      <a href="#projects"><span class="nav-num">02.</span> projects</a>
+      <a href="#contact"><span class="nav-num">03.</span> contact</a>
+      <a class="nav-cta" href="https://github.com/SatishUpadhyaya/SUResume/blob/master/SatishUpadhyayaResume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-  {% endfor %}
-</div>
+</header>
 
-<div class="container box indexHeading">
-  <h1>👋 My name is Satish Upadhyaya.</h1>
-  <br>
+<main id="main">
 
-  <img src="/assets/SatishUpadhyaya.jpg" alt="SatishUpadhyaya.jpeg">
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="terminal" id="terminal">
+        <div class="terminal-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-title">satish@localhost: /home/SatishUpadhyaya &mdash; zsh</span>
+        </div>
 
-  <p>
-    I am a student and a software engineer.
-    <ul>
-      <li style="margin-bottom: 10px;">⚙️ I am a Software Engineer at Microsoft working in the Azure Networking org.</li>
-      <li stype="margin-bottom:10px;">📓 During my undergraduate, I worked in the <a href="https://www.colorado.edu/lab/sbs/satish-upadhyaya" target="_blank">SBS group</a> as an undergraduate researcher, advised by Professor Wangda Zuo.</li>
-      <li style="margin-bottom: 10px;">🦄 I previously worked at Microsoft and Workday as a SWE intern.</li>
-      <li style="margin-bottom: 10px;">🧑‍💼 I’m working on a startup which is currently in a stealth mode.</li>
-      <li style="margin-bottom: 10px;">🔧 Languages: Python, C#, C, C++, Typescript</li>
-    </ul>
+        <div class="terminal-body">
+          <p class="cmd"><span class="prompt">$</span> whoami</p>
 
-  <a href="/about">Read more about me ...</a></p>
-</div>
+          <div class="whoami">
+            <img class="avatar" src="/assets/SatishUpadhyaya.jpg" width="460" height="460"
+                 alt="Portrait of Satish Upadhyaya" fetchpriority="high" decoding="async">
+            <div class="whoami-text">
+              <h1>Satish Upadhyaya</h1>
+              <p class="role">
+                <span class="arrow" aria-hidden="true">&gt;</span>
+                <!-- The animating text is hidden from assistive tech (it would
+                     announce a new partial string every ~55ms); screen readers
+                     get the stable line below instead. -->
+                <span class="typed" id="typed" aria-hidden="true">Software Engineer</span><span class="cursor" aria-hidden="true"></span>
+                <span class="sr-only">Software Engineer</span>
+              </p>
+              <p class="path">/home/SatishUpadhyaya</p>
+            </div>
+          </div>
+
+          <p class="cmd"><span class="prompt">$</span> ls ~/highlights</p>
+
+          <ul class="highlights">
+            <li><span class="hl-icon">&#9881;&#65039;</span> Software Engineer at Microsoft, working in the Azure Networking org.</li>
+            <li><span class="hl-icon">&#129302;</span> Currently exploring local LLMs and agentic workflows for development.</li>
+            <li><span class="hl-icon">&#128211;</span> Undergraduate researcher in the SBS group, advised by Professor Wangda Zuo.</li>
+            <li><span class="hl-icon">&#129412;</span> Previously a SWE intern at Microsoft and Workday.</li>
+            <li><span class="hl-icon">&#127956;</span> Avid hiker and skier when I'm away from the keyboard.</li>
+            <li><span class="hl-icon">&#128295;</span> Languages: <code>English</code> <code>C#</code> <code>Python</code> <span class="hl-aside">&mdash; in that order, most days.</span></li>
+          </ul>
+
+          <p class="cmd"><span class="prompt">$</span> <span class="cursor" aria-hidden="true"></span></p>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" href="https://github.com/SatishUpadhyaya/SUResume/blob/master/SatishUpadhyayaResume.pdf" target="_blank" rel="noopener noreferrer">
+          Resume
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap wrap-narrow">
+      <h2 class="section-title reveal">
+        <span class="prompt">$</span> cat <span class="fname">about.md</span>
+        <span class="section-num">01</span>
+      </h2>
+
+      <div class="prose">
+        <p class="reveal">I'm Satish Upadhyaya, and I graduated from the University of Colorado Boulder with a B.S. in Computer Science in Summer 2021. I'm currently working at Microsoft as a Software Engineer in the Azure Networking org.</p>
+
+        <p class="reveal">During my time at CU Boulder, I worked as a Research Assistant in the SBS group, where I helped develop a scalable software system on CU's supercomputer cluster for running large-scale energy simulations. A publication came out of this lab regarding the usage of meta-models over running computationally intensive simulations.</p>
+
+        <p class="reveal">In other areas, I interned with Microsoft on the Azure Networking team (remote, Summer 2020). Before that, I interned at Workday on the Worksheets team (in person, 2019). In the past, I've also worked as a course assistant for an Introduction to Computer Science course at CU Boulder.</p>
+
+        <p class="reveal">I love developing products with an immediate, tangible impact on society, and I have a soft spot for emerging technologies &mdash; my experience spans a plethora of domains within the field. Lately that's meant running local LLMs on my own hardware and folding agentic workflows into how I build software day to day. Away from the keyboard, I'm an avid hiker and skier.</p>
+      </div>
+
+      <ul class="timeline reveal" aria-label="Experience timeline">
+        <li class="tl-item">
+          <span class="tl-when">now</span>
+          <span class="tl-what"><strong>Microsoft</strong> &mdash; Software Engineer II, Azure Networking</span>
+        </li>
+        <li class="tl-item">
+          <span class="tl-when">2021</span>
+          <span class="tl-what"><strong>CU Boulder</strong> &mdash; B.S. Computer Science</span>
+        </li>
+        <li class="tl-item">
+          <span class="tl-when">2020</span>
+          <span class="tl-what"><strong>Microsoft</strong> &mdash; SWE Intern, Azure Networking</span>
+        </li>
+        <li class="tl-item">
+          <span class="tl-when">2019</span>
+          <span class="tl-what"><strong>Workday</strong> &mdash; SWE Intern, Worksheets</span>
+        </li>
+      </ul>
+
+      <p class="note reveal">
+        <span class="prompt">$</span> open resume &rarr;
+        <a href="https://github.com/SatishUpadhyaya/SUResume/blob/master/SatishUpadhyayaResume.pdf" target="_blank" rel="noopener noreferrer">SatishUpadhyayaResume.pdf</a>
+        <em>Last updated: Summer 2022</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <h2 class="section-title reveal">
+        <span class="prompt">$</span> ls -la <span class="fname">~/projects</span>
+        <span class="section-num">02</span>
+      </h2>
+      <p class="section-lead reveal">What I'm building now, and some highlights from over the years.</p>
+
+      <div class="cards">
+
+        <div class="card card-private reveal">
+          <div class="card-top">
+            <svg class="ico ico-lock" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span class="badge-private">private repos</span>
+          </div>
+          <h3>Things I'm building now</h3>
+          <p>These live in private repos, so there's nothing useful to link out to.</p>
+          <ul class="private-list">
+            <li>Agentic AI workflows for everyday development, and running local LLMs on my own hardware.</li>
+            <li>A home automation setup built on Home Assistant &mdash; lights, locks, cameras, and a garage door that opens on license-plate recognition.</li>
+            <li>Assorted smaller experiments.</li>
+          </ul>
+          <ul class="tags">
+            <li>Python</li><li>Local LLMs</li><li>Home Assistant</li><li>Computer Vision</li>
+          </ul>
+        </div>
+
+        <a class="card reveal" href="https://github.com/SatishUpadhyaya/Robotics-Final-Project" target="_blank" rel="noopener noreferrer">
+          <div class="card-top">
+            <svg class="ico ico-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            <svg class="ico ico-out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </div>
+          <h3>OpenPose Drone Control Via Body Movement</h3>
+          <p>An application developed using MAVROS to control a drone through real-time user input via keyboard controls, ArUco tracking, and OpenPose.</p>
+          <ul class="tags">
+            <li>Python</li><li>MAVROS</li><li>OpenPose</li><li>ArUco</li>
+          </ul>
+        </a>
+
+        <a class="card reveal" href="https://github.com/SatishUpadhyaya/GWDataVisualizer" target="_blank" rel="noopener noreferrer">
+          <div class="card-top">
+            <svg class="ico ico-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            <svg class="ico ico-out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </div>
+          <h3>Data Visualization Web App with Dash</h3>
+          <p>A data visualization tool that lets you pull important analytics and statistics out of your dataset.</p>
+          <ul class="tags">
+            <li>Python</li><li>Dash</li><li>Plotly</li><li>pandas</li>
+          </ul>
+        </a>
+
+        <a class="card reveal" href="https://github.com/SatishUpadhyaya/ProjectEuler" target="_blank" rel="noopener noreferrer">
+          <div class="card-top">
+            <svg class="ico ico-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            <svg class="ico ico-out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </div>
+          <h3>Project Euler</h3>
+          <p>My solutions for the first 49 <span class="ext">Project Euler</span> problems, written in Python 3. <em>10/10, would recommend.</em></p>
+          <ul class="tags">
+            <li>Python 3</li><li>Algorithms</li><li>Math</li>
+          </ul>
+        </a>
+
+        <a class="card reveal" href="https://github.com/SatishUpadhyaya/NFL_HomeFieldPredictor" target="_blank" rel="noopener noreferrer">
+          <div class="card-top">
+            <svg class="ico ico-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            <svg class="ico ico-out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </div>
+          <h3>NFL Home Field Predictor</h3>
+          <p>An SVM-SVC predictor built to explore the relationship between a game's QB passer rating and final points versus whether the game was played at home or away. Stitched together with pandas, NumPy, and scikit-learn on data from Kaggle.</p>
+          <ul class="tags">
+            <li>Python</li><li>scikit-learn</li><li>pandas</li><li>NumPy</li>
+          </ul>
+        </a>
+
+      </div>
+
+      <p class="note reveal">
+        <span class="prompt">$</span> git remote -v &rarr;
+        <a href="https://github.com/satishupadhyaya" target="_blank" rel="noopener noreferrer">github.com/satishupadhyaya</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="wrap wrap-narrow">
+      <h2 class="section-title reveal">
+        <span class="prompt">$</span> ./<span class="fname">connect.sh</span>
+        <span class="section-num">03</span>
+      </h2>
+      <p class="section-lead reveal">Feel free to reach out if you want to connect.</p>
+
+      <div class="contact-list">
+
+        <a class="contact-row reveal" href="https://github.com/satishupadhyaya" target="_blank" rel="noopener noreferrer">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span class="c-label">GitHub</span>
+          <span class="c-value">github.com/satishupadhyaya</span>
+          <svg class="ico ico-out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+
+        <a class="contact-row reveal" href="https://www.linkedin.com/in/satishupadhyaya/" target="_blank" rel="noopener noreferrer">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          <span class="c-label">LinkedIn</span>
+          <span class="c-value">in/satishupadhyaya</span>
+          <svg class="ico ico-out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+
+        <!-- The address is never written in plaintext here: it's split and
+             base64'd so a source-scraping bot finds no email to match, and is
+             only assembled in the DOM once a person reveals it. -->
+        <div class="contact-row reveal" id="email-row"
+             data-u="c2F0aXNocmFqdXBhZGh5YXlh" data-d="Z21haWwuY29t">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+          <span class="c-label">Email</span>
+
+          <a class="c-value email-ink" id="email-ink" href="#"
+             aria-label="Reveal email address">
+            <span class="ink-text" id="email-text" aria-hidden="true">••••••••••••••••••@•••••••••</span>
+            <svg class="ink-eye" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </a>
+
+          <button class="copy-btn" id="copy-email" aria-label="Copy email address to clipboard">
+            <span class="copy-label">copy</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>&copy; <span id="year">2026</span> Satish Upadhyaya. All rights reserved.</p>
+    <p class="footer-meta"><span class="prompt">$</span> exit<span class="cursor" aria-hidden="true"></span></p>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
