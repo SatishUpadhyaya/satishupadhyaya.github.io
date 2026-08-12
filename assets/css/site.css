@@ -365,6 +365,12 @@ code {
 .role .arrow { color: var(--accent); margin-right: 8px; }
 .role .cursor { height: .95em; }
 
+/* The caret belongs to the typewriter. With JS off or reduced motion on, the
+   role line is static text and a caret sitting after it would be misleading —
+   site.js adds .is-typing only when it actually starts typing. */
+.role .cursor { display: none; }
+.role.is-typing .cursor { display: inline-block; }
+
 .path {
   margin: 0;
   color: var(--text-faint);

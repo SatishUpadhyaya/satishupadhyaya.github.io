@@ -123,13 +123,17 @@
                  alt="Portrait of Satish Upadhyaya" fetchpriority="high" decoding="async">
             <div class="whoami-text">
               <h1>Satish Upadhyaya</h1>
-              <p class="role">
+              <p class="role" id="role">
                 <span class="arrow" aria-hidden="true">&gt;</span>
-                <!-- The animating text is hidden from assistive tech (it would
+                <!-- Progressive enhancement: the full list is the DEFAULT
+                     content, so anyone with JS off or reduced-motion on still
+                     gets every role. When motion is allowed, site.js clears
+                     this and types them one at a time instead.
+                     The animating text is hidden from assistive tech (it would
                      announce a new partial string every ~55ms); screen readers
-                     get the stable line below instead. -->
-                <span class="typed" id="typed" aria-hidden="true">Software Engineer</span><span class="cursor" aria-hidden="true"></span>
-                <span class="sr-only">Software Engineer</span>
+                     get the stable line below. -->
+                <span class="typed" id="typed" aria-hidden="true">Software Engineer @ Microsoft &middot; Agentic Software Engineer &middot; CU Boulder CS, 2021 &middot; Hiker &amp; skier</span><span class="cursor" aria-hidden="true"></span>
+                <span class="sr-only">Software Engineer at Microsoft. Agentic software engineer. CU Boulder Computer Science, 2021. Hiker and skier.</span>
               </p>
               <p class="path">/home/SatishUpadhyaya</p>
             </div>

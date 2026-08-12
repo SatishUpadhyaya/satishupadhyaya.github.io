@@ -115,6 +115,8 @@
     'Hiker & skier'
   ];
 
+  // The markup already carries every role as a static list, which is what
+  // reduced-motion and no-JS visitors keep. Only take over when motion is OK.
   if (typed && !reduceMotion) {
     var roleIdx = 0;
     var charIdx = 0;
@@ -125,6 +127,8 @@
     var HOLD_MS = 2100;
     var GAP_MS = 350;
 
+    var roleLine = document.getElementById('role');
+    if (roleLine) roleLine.classList.add('is-typing');
     typed.textContent = '';
 
     function tick() {
